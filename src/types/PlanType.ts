@@ -1,4 +1,4 @@
-type PlanType = {
+export type PlanType = {
   id: number;
   title: string;
   price: number;

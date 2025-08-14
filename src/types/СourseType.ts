@@ -1,4 +1,4 @@
-type СourseType = {
+export type СourseType = {
   id: number;
   title: string;
   list: string[];
