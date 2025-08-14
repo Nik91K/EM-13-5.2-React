@@ -1,8 +1,12 @@
+import LayoutPage from "../../layouts/page"
+
 function FirstPage() {
 
   return (
     <>
-    
+    <LayoutPage>
+        
+    </LayoutPage>
     </>
   )
 }
