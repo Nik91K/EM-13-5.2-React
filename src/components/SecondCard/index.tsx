@@ -3,7 +3,7 @@ import type { ProductType } from "../../types/ProductType"
 function SecondCard(props:ProductType) {
 
   return (
-    <>
+
        <div className="card">
       <div className="content">
         <div className="title">
@@ -16,9 +16,10 @@ function SecondCard(props:ProductType) {
         <button>
           {props.buttonName}
         </button>
-  </div>
-    </>
+        </div>
+
+
   )
 }
-
+``
 export default SecondCard

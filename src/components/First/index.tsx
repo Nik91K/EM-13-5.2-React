@@ -1,27 +1,22 @@
-import type { ProductType } from '../../types/ProductType'
+import type {СourseType} from '../../types/СourseType'
 import './style.css'
 
-function FirstCard(props: ProductType) {
+function FirstCard(props:СourseType) {
 
   return (
-    <>
+
     <div className="card">
       <div className="content">
         <div className="title">
             <p>{props.title} </p>
             </div>
-        <div className="price">
-          <p>{props.price}</p>
-        </div>
-        <div className="description">
-          <p> {props.description}</p>
-        </div>
-      </div>
+        <p>{props.list.flat()}</p>
         <button>
           {props.buttonName}
         </button>
+        </div>
   </div>
-    </>
+
   )
 }
 

@@ -1,5 +1,6 @@
 import LayoutPage from "../../layouts/page"
 import firstCardDate from '../../fixture/firstPage.json'
+import FirstCard from "../../components/First"
 function FirstPage() {
 
   return (
