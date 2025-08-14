@@ -5,6 +5,9 @@ function ThirdPage() {
 
   return (
     <>
+<<<<<<< HEAD
+
+=======
     <LayoutPage>
         <div className='third-card'>
     {
@@ -13,6 +16,7 @@ function ThirdPage() {
       })}
     </div>
     </LayoutPage>
+>>>>>>> ced3994ebd11a065f4d04c0abf9b7449f99b83e5
     </>
   )
 }
