@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './style.css'
 
 const Header = () => {
@@ -6,16 +7,16 @@ const Header = () => {
         <header>
             <nav>
                 <li>
-                    <a href="/" className='header-link'>Main page</a>
+                    <Link to="/" className='header-link'>Main page</Link>
                 </li>
                 <li>
-                    <a href="/page-1" className='header-link'>First page</a>
+                    <Link to="/page-1" className='header-link'>First page</Link>
                 </li>
                 <li>
-                    <a href="/page-2" className='header-link'>Second page</a>
+                    <Link to="/page-2" className='header-link'>Second page</Link>
                 </li>
                 <li>
-                    <a href="/page-3" className='header-link'>Third page</a>
+                    <Link to="/page-3" className='header-link'>Third page</Link>
                 </li>
             </nav>
         </header>
