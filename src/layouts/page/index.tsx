@@ -9,7 +9,9 @@ function LayoutPage(props:PageLayoutPage) {
   return (
     <>
     <Header/>
-    {props.children}
+      <div className="page-content">
+        {props.children}
+      </div>
     <Footer/>
     </>
   )
