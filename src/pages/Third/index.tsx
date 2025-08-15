@@ -12,7 +12,7 @@ const ThirdPage = () => {
       <div className="third-page">
       {plans.map((card) => (
         <Card key={card.id} title={card.title} buttonText={card.buttonName}>
-          <p>{card.description} <span>{card.price}</span></p>
+          <p>{card.description} <p>{card.price}</p></p>
         </Card>
       ))}
       </div>
