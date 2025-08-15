@@ -3,4 +3,4 @@ export type CourseType = {
   title: string;
   list: string[];
   buttonName: string;
-};
+}
