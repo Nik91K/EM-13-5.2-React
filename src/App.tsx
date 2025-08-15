@@ -1,8 +1,6 @@
 
 import './App.css'
 import LayoutPage from './layouts/page'
-import catGif from "./assets/cat.gif";
-
 
 
 function App() {
@@ -10,11 +8,8 @@ function App() {
   return (
     <>
     <LayoutPage>
-      <p>Hello user!</p>
-         <img src={catGif} alt="Котик" style={{ width: "300px", height: "auto" }} />
+      <img src='https://i.pinimg.com/236x/c0/6b/89/c06b89b3b9aaf19513565e41123c5802.jpg'></img>
     </LayoutPage>
-
-
     </>
   )
 }
