@@ -56,10 +56,3 @@ button {
   width: 90%;
   text-shadow: 0px 4px 18px #2c3442;
 }
-
-.page-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;     
-  padding: 20px;
-}
