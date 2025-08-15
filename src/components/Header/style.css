@@ -1,12 +1,20 @@
 .header-link{
     text-decoration: none;
-    color: #a3a3a3;
+    color: #6d6d6d;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
 }
 
 .header-link:hover {
-    color: #f3f3f3;
+    color: #383838;
     text-decoration: underline;
+    transition: 0.3s all ease-in-out;
 }
+
+.header-links{
+    list-style: none;
+}
+
 nav {
     display: flex;
     align-items: center;
