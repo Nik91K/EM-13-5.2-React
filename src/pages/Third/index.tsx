@@ -1,19 +1,19 @@
-import ThirdCard from "../../components/ThirdCard"
-import LayoutPage from "../../layouts/page"
-import thirdCardDate from '../../fixture/thirdPage.json'
-function ThirdPage() {
+import Card from "../../components/Card";
+import thirdcardDate from '../../fixture/thirdPage.json'
+import LayoutPage from "../../layouts/page";
+import type { PlanType } from "../../types/PlanType";
+
+const ThirdPage = () => {
+  const plans: PlanType[] = thirdcardDate
 
   return (
-
     <LayoutPage>
-        <div className='third-card'>
-    {
-      thirdCardDate.map(object => {
-      return <ThirdCard key={object.id} {...object}/>
-      })}
-    </div>
+      {plans.map((card) => (
+        <Card key={card.id} title={card.title} buttonText={card.buttonName}>
+          <p>{card.description} <span>{card.price}</span></p>
+        </Card>
+      ))}
     </LayoutPage>
-
   )
 }
 

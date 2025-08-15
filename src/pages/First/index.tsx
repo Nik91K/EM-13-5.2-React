@@ -1,19 +1,26 @@
-import LayoutPage from "../../layouts/page"
-import firstCardDate from '../../fixture/firstPage.json'
-function FirstPage() {
+import Card from "../../components/Card";
+import firstcardDate from '../../fixture/firstPage.json'
+import LayoutPage from "../../layouts/page";
+import type { CourseType } from '../../types/СourseType'
+
+const CoursesPage = () => {
+  const courses: CourseType[] = firstcardDate
 
   return (
-    <>
     <LayoutPage>
-         <div className='first-page'>
-        {
-          firstCardDate.map(object => {
-          return <FirstCard key={object.id} {...object}/>
-          })}
-        </div>
+      {courses.map((course) => (
+        <Card key={course.id} title={course.title} buttonText={course.buttonName}>
+          <ul>
+            {course.list.map((item, index) => (
+              <li key={index}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </Card>
+      ))}
     </LayoutPage>
-    </>
   )
 }
 
-export default FirstPage
+export default CoursesPage

@@ -1,4 +1,4 @@
-export type СourseType = {
+export type CourseType = {
   id: number;
   title: string;
   list: string[];
