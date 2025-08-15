@@ -7,19 +7,19 @@ type CardProps = {
   children: React.ReactNode
 }
 
-const Card = ({ title, buttonText, children }: CardProps) => {
+const Card = (props: CardProps) => {
   return (
     <div className='card'>
       <div className="content">
         <div className='title'>
-          <p>{title}</p>
+          <p>{props.title}</p>
         </div>
         <div className='price'>
-          {children}
+          {props.children}
         </div>
       </div>
       <button>
-        {buttonText}
+        {props.buttonText}
       </button>
     </div>
   )
