@@ -2,7 +2,6 @@ import Card from "../../components/Card";
 import firstcardDate from '../../fixture/firstPage.json'
 import LayoutPage from "../../layouts/page";
 import type { CourseType } from '../../types/СourseType'
-
 const CoursesPage = () => {
   const courses: CourseType[] = firstcardDate
 
